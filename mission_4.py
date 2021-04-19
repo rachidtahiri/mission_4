@@ -55,3 +55,13 @@ def distance_matrice(L):
             C.append(distance_h(L[i],L[j]))
         P=P+[C]
     return (P)
+
+
+print(is_adn("AcaA"))
+k="cg"
+print(position("ACGACCG",k))
+S="TGACG"
+M="ATGAC"
+print("la distance de hamming = ",distance_h(S,M))
+A=["AG","AT","GT","ACG","ACT"]
+print("matrix = ",distance_matrice(A))
