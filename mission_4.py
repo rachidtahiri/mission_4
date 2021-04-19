@@ -30,3 +30,16 @@ def position(l,a):
         if a==Q[i] or a.upper()==Q[i] or a.lower()==Q[i]:
                 P=P+[i]   
     return(P)
+
+def distance_h(A,B):
+    """ fonction qui calcule la distance de hamming
+        pre: prend deux chaine de carractere 'A'et'B'
+        pot:retourne le nombre de possition ou les carracters sont different"""
+    if len(A)!=len(B):
+        return("none")
+    else:
+        dis=0
+        for i in range (len(A)):
+            if A[i]!=B[i]:
+                dis+=1
+        return (dis)
