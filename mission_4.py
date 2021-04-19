@@ -43,3 +43,15 @@ def distance_h(A,B):
             if A[i]!=B[i]:
                 dis+=1
         return (dis)
+    
+def distance_matrice(L):
+    """ fonction qui calcule la distance de hamming dans une liste de chaine de chaine de carractères
+        pre: prendre une liste de chaine de carractères
+        post: terourner une matrice de position"""
+    P=[]
+    for i in range (len(L)):
+        C=[]
+        for j in range(len(L)):
+            C.append(distance_h(L[i],L[j]))
+        P=P+[C]
+    return (P)
