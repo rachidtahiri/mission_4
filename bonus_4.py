@@ -1,3 +1,4 @@
+
 def primes(maxe):
     """fonction qui cherche tous les nombres premiers entre # 2 et maxe#
        pre:Pour chaque nombre successif, on vérifie si on peut le diviser
